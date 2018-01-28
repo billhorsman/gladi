@@ -1,0 +1,22 @@
+!!!
+%html
+  %head
+    %title= @og[:title]
+    = csrf_meta_tags
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    %link(rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="")
+    %script(src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="")
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    %meta(name="Description"){ content: @og[:description] }
+    - @og.each do |name, value|
+      %meta{ property: "og:#{name}", content: value }
+    %meta(name="turbolinks-cache-control" content="no-cache")
+    %meta(name="viewport" content="width=device-width initial-scale=1")
+    %link(rel="icon"){ href: asset_path("favicon.png") }
+    %meta(charset="UTF-8")
+  %body
+    %main
+      = render 'layouts/header'
+      = yield
+      = render 'layouts/seo' if Rails.env.development?
+    = render 'layouts/footer'

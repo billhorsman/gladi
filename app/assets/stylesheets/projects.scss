@@ -1,0 +1,10 @@
+.fund-raising {
+  padding: 1rem;
+  @extend .jumbotron;
+  h2 {
+    font-size: $font-size-lg;
+  }
+  .progress {
+    background: white;
+  }
+}

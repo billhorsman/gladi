@@ -1,0 +1,30 @@
+$logo-size: 35px;
+.navbar-brand {
+  img {
+    height: $logo-size;
+    width: $logo-size * 16/15;
+    transition: 0.3s all;
+  }
+  span {
+    color: white;
+    vertical-align: middle;
+  }
+  &:hover {
+    img {
+      transform: rotate(-72deg);
+    }
+  }
+}
+
+header {
+  background-position: bottom;
+  @include clearfix;
+}
+
+.navbar-light {
+
+  .active {
+    background: $pale-purple;
+    border-radius: 5px;
+  }
+}

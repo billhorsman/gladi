@@ -1,0 +1,19 @@
+﻿{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Gladi Island",
+        "description": "Gladi Ecotourism"
+      },
+      "geometry": {
+        "coordinates": [
+          -13.0901513,
+          8.5526252
+        ],
+        "type": "Point"
+      }
+    }
+  ],
+  "type": "FeatureCollection"
+}
