@@ -1,3 +1,25 @@
 %section
   .container-fluid
-    %p The Gladi-Gladi Trust (UK) supports the #{link_to "Tasso Ecotourism Project", TASSO_ISLAND_URL} in Sierra Leone.
+    %h1 Projects We Support
+
+    %article.media
+      = link_to image_tag("tep-logo.png", class: "mr-3"), TASSO_ISLAND_URL
+      .media-body
+        %h5 Tasso Ecotourism Project
+        %p We support ecotourism on Tasso Island in Sierra Leone. #{link_to "Find out more", TASSO_ISLAND_URL}.
+
+    %article.media
+      = link_to image_tag("hospital.png", class: "mr-3"), projects_island_hospital_path
+      .media-body
+        %h5 Tasso Hospital
+        %p
+          We are helping to rebuild the abandoned hospital on Tasso Island.
+          #{link_to "Find out more", projects_island_hospital_path}.
+
+    %article.media
+      = link_to image_tag("water-for-children.png", class: "mr-3"), projects_water_for_children_path
+      .media-body
+        %h5 Water for Children
+        %p
+          The children of Tasso Island are exposed to Typhoid and Cholera. We want to help.
+          #{link_to "Find out more", projects_water_for_children_path}.
