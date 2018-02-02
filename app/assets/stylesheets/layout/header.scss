@@ -1,17 +1,19 @@
 $logo-size: 35px;
 .navbar-brand {
+  font-size: 1rem;
   img {
     height: $logo-size;
-    width: $logo-size * 16/15;
+    margin: -3px 1rem -3px 0;
     transition: 0.3s all;
+    width: $logo-size * 16/15;
   }
   span {
     color: white;
-    vertical-align: middle;
+    vertical-align: text-top;
   }
   &:hover {
     img {
-      transform: rotate(-72deg);
+      transform: rotate(-90deg);
     }
   }
 }

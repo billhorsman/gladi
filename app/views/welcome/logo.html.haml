@@ -1,0 +1,10 @@
+- size = 200
+- padding = size * 0.15
+- xCenter = size / 2 + padding
+- yCenter = size / 2 + padding
+%svg.logo(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"){ width: "#{size + 2 * padding}px", height: "#{size + 2 * padding}px"}
+  %circle(){ cx: xCenter, cy: yCenter, r: size / 2 + padding, fill: "#7A00FD"}
+  %circle(fill-opacity="0.4"){ cx: xCenter, cy: yCenter, r: size / 2, fill: "#FFFFFF"}
+  %circle{ cx: xCenter, cy: yCenter, r: size / 2 - padding, fill: "#7A00FD"}
+  %path(stroke="white" fill="transparent"){ d: "M #{padding + size / 2} #{padding * 1.5} A #{size / 2 - padding / 2} #{size / 2 - padding / 2} 0, 1, 0, #{size + padding * 0.5} #{size / 2 + padding * 0.6}", stroke: { width: padding }}
+  %rect(fill="white"){ x: size / 2 + padding, y: size / 2 + padding * 0.5, width: size / 2, height: padding }
