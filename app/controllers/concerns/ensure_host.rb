@@ -2,8 +2,8 @@ module EnsureHost
   extend ActiveSupport::Concern
 
   included do
-    force_ssl if: -> { !Rails.env.test? && ENV['DISABLE_SSL'].blank? }
     before_action :ensure_correct_host
+    force_ssl if: -> { !Rails.env.test? && ENV['DISABLE_SSL'].blank? }
   end
 
   def ensure_correct_host
