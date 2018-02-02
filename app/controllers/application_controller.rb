@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  include EnsureHost
   before_action :seo
 
 private
