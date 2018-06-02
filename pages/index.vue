@@ -1,38 +1,30 @@
 <template>
-  <section class="container">
+  <section>
     <div>
-      <app-logo/>
       <h1 class="title">
-        gladi
+        <img src="~/assets/images/logo.png" alt="Gladi-Gladi" class="logo">
+        Gladi-Gladi Trust
       </h1>
-      <h2 class="subtitle">
-        Website for gladigladi.org
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
+      <ul class="projects">
+        <li>
+          <a
+            class="logo"
+            href="http://tassoisland.org/">
+            <img src="~/assets/images/tep-logo.png" alt="Gladi-Gladi" class="logo">
+          </a>
+          <h2>Tasso Ecotourism Project</h2>
+          <p>We support ecotourism on Tasso Island in Sierra Leone.</p>
+          <a class="cta"
+          href="http://tassoisland.org/">
+            Find out more
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
 </template>
 
-<script>
-import AppLogo from '~/components/AppLogo.vue'
-
-export default {
-  components: {
-    AppLogo
-  }
-}
-</script>
-
-<style>
+<style lang="scss">
 .container {
   min-height: 100vh;
   display: flex;
@@ -42,23 +34,59 @@ export default {
 }
 
 .title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+  font-size: 3rem;
+  img {
+    height: 60px;
+    width: 60px;
+  }
+  @media (max-width: 480px) {
+    font-size: 1.5rem;
+  }
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+ul.projects {
+  margin: 2rem 0 0;
+  padding: 0;
+
+  > li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  .logo {
+    display: block;
+    float: left;
+    margin-right: 1rem;
+    img {
+      width: 100px;
+    }
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  @media (max-width: 480px) {
+    > li {
+      text-align: center;
+    }
+    .logo {
+      float: none;
+      margin: 0 auto 1rem;
+    }
+  }
 }
 
 .links {
-  padding-top: 15px;
+  margin-top: 2rem;
+  a {
+    padding: 1rem;
+    img {
+      height: 100px;
+      width: 100px;
+    }
+  }
 }
 </style>
