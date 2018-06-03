@@ -23,7 +23,7 @@
 <style lang="scss">
 
 ul.projects {
-  margin: 2rem 0 0;
+  margin: 0;
   padding: 0;
 
   > li {
