@@ -21,8 +21,8 @@
   .container-fluid {
     align-items: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 72px 1fr;
+    grid-template-columns: 1fr minmax(280px, 520px) 1fr;
+    grid-template-rows: 72px 1fr 56px;
     justify-content: center;
     min-height: 100vh;
     text-align: center;
@@ -50,9 +50,8 @@
     text-align: center;
   }
   footer {
-    bottom: 0;
-    position: absolute;
-    left: 0;
+    grid-column-start: 1;
+    grid-column-end: 4;
     padding: 1rem;
     text-align: right;
     width: 100%;

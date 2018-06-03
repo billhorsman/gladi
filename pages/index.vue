@@ -27,7 +27,7 @@ ul.projects {
   padding: 0;
 
   > li {
-    background: rgba(255, 255, 255, .6);
+    background: rgba(255, 255, 255, .8);
     color: black;
     list-style: none;
     margin: 0;
