@@ -20,3 +20,10 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+
+The Gladi-Gladi Trust
+25 Clyde Road
+Redland
+Bristol
+BS6 6RJ
+01179 735886
