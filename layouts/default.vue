@@ -8,7 +8,7 @@
     </header>
     <nuxt/>
     <footer>
-      &copy; Gladi-Gladi Trust 2017-2018
+      &copy; Gladi-Gladi Trust 2017-2018. The Gladi-Gladi Trust is a <a href="https://www.gov.uk/government/organisations/charity-commission">registered charity in England and Wales</a> no. 1179219
     </footer>
   </section>
 </template>
@@ -55,5 +55,20 @@
     padding: 1rem;
     text-align: right;
     width: 100%;
+    a {
+      color: white;
+    }
+  }
+  a {
+    border-bottom: 1px solid #ccc;
+    padding: 2px 1px;
+    text-decoration: none;
+    transition: all .3s;
+    &:hover {
+      background: rgba(255, 255, 255, .1);
+      border-color: white;
+      color: white;
+      text-decoration: none;
+    }
   }
 </style>
