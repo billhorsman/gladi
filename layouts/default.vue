@@ -2,7 +2,7 @@
   <section class="container-fluid">
     <header>
       <h1>
-        <img src="~/assets/images/logo.png" alt="Gladi-Gladi" class="logo">
+        <logo></logo>
         Gladi-Gladi Trust
       </h1>
     </header>
@@ -13,6 +13,12 @@
   </section>
 </template>
 
+<script>
+import Logo from "../components/Logo";
+  export default {
+    components: { Logo}
+  }
+</script>
 <style lang="scss">
   body {
     background: #713AF3;
