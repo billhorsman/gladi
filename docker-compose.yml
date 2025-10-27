@@ -1,0 +1,15 @@
+services:
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: gladi
+    restart: always
+    volumes:
+      - ./:/app:cached
+    ports:
+      - 8083:8083
+
+volumes:
+  gladi-app:
